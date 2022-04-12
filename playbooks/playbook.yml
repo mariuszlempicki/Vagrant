@@ -1,6 +1,0 @@
-- name: Play my roles
-  hosts: all
-  become: true
-  roles:
-    - packages
-    - user

@@ -1,0 +1,14 @@
+- name: Init playbook
+  hosts: all
+  become: true
+  vars:
+    docker_users:
+      - panda
+      - vagrant
+  roles:
+    - packages
+    - user
+    - geerlingguy.docker
+    - christiangda.awscli
+    - christiangda.awscli_configure
+    - diodonfrost.terraform
